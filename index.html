@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Talent Management System</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+       <h1 style="color: rgb(31, 194, 80);">Bienvenu au STMS (Street Talent Management System)</h1>
+       
+            <table>
+                <tr>
+                    <td>
+                        <form onsubmit="event.preventDefault(); onFormSubmit()">
+        
+                            <div>
+                                <label for="code">Code <label class="validation-error hide"  id="codeValidationError" >This Field is required</label></label>
+                                <input type="text" name="code" id="code">
+                            </div>
+                            <div>
+                                <label for="fullname">Nom complet* <label class="validation-error hide"  id="fullNameValidationError" >This Field is required</label> </label>
+                                <input type="text" name="fullname" id="fullname">
+                            </div>                  
+                            <div>
+                                <label for="domaine">Domaine</label>
+                                <input type="text" name="domaine" id="domaine">
+                            </div>
+                            <div>
+                                <label for="code">Adresse</label>
+                                <input type="text" name="address" id="address">
+                            </div>
+                            <div>
+                                <label for="mail">Mail</label>
+                                <input type="text" name="mail" id="mail">
+                            </div>
+                            <div>
+                                <label for="typeProfil">Type de profil</label>
+                                <input type="text" name="typeProfil" id="typeProfil">
+                            </div>
+                            <div>
+                                <input class="form-action-buttons submit" type="submit" value="Submit">
+                            </div>
+                            
+                        </form>
+                    </td>
+                    <td>
+                        <table class="list" id="emplist">
+                            <thead>
+                                <tr>
+                                    <td class="thead">Code</td>
+                                    <td class="thead">Nom complet</td>
+                                    <td class="thead">Domaine</td>
+                                    <td class="thead">Adresse</td>
+                                    <td class="thead">Mail</td>
+                                    <td class="thead">Type de profil</td>
+                                    <td class="thead">Actions</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+        
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
