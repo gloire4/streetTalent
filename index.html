@@ -1,67 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/button.css">
-    <link rel="stylesheet" href="assets/css/records.css">
-    <link rel="stylesheet" href="assets/css/model.css">
-    <script src="assets/js/main.js" defer></script>
-    <title>Street Talent</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/carousel.css">
+
+    <title>Auth System</title>
 </head>
-
 <body>
-    <header>
-        <h1 class="header-title">Street Talent</h1>
 
-    </header>
-    <main>
-        <button class="button blue mobile" id="idMembre">Nouveau membre</button>
-        <table id="tblMembre" class="records">
-            <thead>
-                <tr>
-                    <td>Nom complet</td>
-                    <td>Mail</td>
-                    <td>Domaine</td>
-                    <td>Adresse</td>
-                    <td>Genre</td>
-                    <td>Type de profil</td>
-                    <td>Actions</td>
-                </tr>
-            </thead>
-            <tbody>
 
-            </tbody>
-        </table>
-        <!-- <div class="model active" id="model"> -->
-        <div class="model" id="model">
-            <div class="model-content">
-                <header class="model-header">
-                    <h2>Créer nouveau membre</h2>
-                    <span class="model-close" id="modelClose">&#10006;</span>
-                </header>
-                <form id="form" class="model-form">
-                    <input type="text" class="model-field" id="name" data-index="new" placeholder="Nom complet" required>
-                    <input type="email" class="model-field" id="email" placeholder="Mail" required>
-                    <input type="text" class="model-field" id="domaine" placeholder="Domaine" required>
-                    <input type="text" class="model-field" id="adresse" placeholder="Adresse" required>
-                    <input type="text" class="model-field" id="genre" placeholder="Genre" required>
-                    <input type="text" class="model-field" id="typeProfil" placeholder="Type de profil" required>
-                </form>
-                <footer class="model-footer">
-                    <button class="button green" id="save">Enregistrer</button>
-                    <button class="button blue" id="cancel">Annuler</button>
-                </footer>
-            </div>
+    <nav>
+        <!--  <div class="logo">Street Talent</div> -->
+        <div class="logo"><img   src="assets/img/stalent-logo.png" style="width: 75px; height: 75px; margin-top: 0px;"  alt="Street Talent - Logo"></div>
+        <label for="btn" class="icon">
+             <span class="fa fa-bars"></span>
+         </label>
+         <input type="checkbox" id="btn">
+         <ul>
+             <li><a href="#">Accueil</a></li>
+             <li>
+                 <label for="btn-1" class="show">Features + </label>
+                 <a href="">Features</a>
+                 <input type="checkbox" id="btn-1">
+             <ul>
+                 <li><a href="">Pages</a></li>
+                 <li><a href="">Elements</a></li>
+                 <li><a href="">Icons</a></li>
+             </ul>
+             </li>
+             <li>
+                 <label for="btn-2" class="show">Services + </label>
+                 <a href="">Services</a>
+                 <input type="checkbox" id="btn-2">
+                 <ul>
+                     <li><a href="">Dev Web</a></li>
+                     <li><a href="">App Design</a></li>
+                     <li>
+                         <label for="btn-3" class="show">More +</label>
+                         <a href="">More 
+                         <span class="fa fa-plus"></span>
+                     </a>
+                         <input type="checkbox" id="btn-3">
+                     
+                     <ul>
+                         <li><a href="">Submenu-1</a></li>
+                         <li><a href="">Submenu-2</a></li>
+                         <li><a href="">Submenu-3</a></li>
+                     </ul>
+                     </li>
+                 </ul>
+             </li>
+             <li><a href="">Portofolio</a></li>
+             <li><a href="">Contact</a></li>
+
+             <li><a class="btn" href="login.html" style="margin-top: 14px;"  >login</a></li>
+             <li><a class="btn" href="register.html" style="margin-top: 14px;"  >register</a></li>
+         </ul>
+    </nav>
+
+    <!-- <div id="welcome">
+        <h1>BIENVENU SUR LA PLATEFORME DE STREET TALENT</h1>
+    </div> -->
+
+
+    <!-- CAROUSEL 1 -->
+    <div class="container">
+        <div class="carousel">
+            <div class="carousel__face"><span>Street talent</span></div>
+            <div class="carousel__face"><span>Promoteur de talents</span></div>
+            <div class="carousel__face"><span>Spécial est la clé</span></div>
+            <div class="carousel__face"><span>Pour toi</span></div>
+            <div class="carousel__face"><span>Juste donnes toi</span></div>
+            <div class="carousel__face"><span>Un essai</span></div>
+            <div class="carousel__face"><span>Et vois</span></div>
+            <div class="carousel__face"><span>Comment ça marche</span></div>
+            <div class="carousel__face"><span>Woow</span></div>
         </div>
-    </main>
-    <footer>
-        Copyright &copy; Hltic Corp 2022 <br> Street Talent<br> Promoteur de talents<br> Phone: +23566000000<br> streettalent@gmail.com
-        <br>
-    </footer>
-</body>
+    </div> 
 
+
+   
+
+    
+    <script src="assets/js/login.js"></script>
+
+</body>
 </html>

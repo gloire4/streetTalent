@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+    <link rel="stylesheet" href="assets/css/records.css">
+    <link rel="stylesheet" href="assets/css/model.css">
+    <script src="assets/js/main.js" defer></script>
+    <title>Street Talent</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+             <li><a class="btn" href="login.html">Log out</a></li>
+        </ul>
+     </nav>
+    <header>
+        <h1 class="header-title">Street Talent</h1>
+
+    </header>
+    <main>
+        <button class="button blue mobile" id="idMembre">Nouveau membre</button>
+        <table id="tblMembre" class="records">
+            <thead>
+                <tr>
+                    <td>Nom complet</td>
+                    <td>Mail</td>
+                    <td>Domaine</td>
+                    <td>Adresse</td>
+                    <td>Genre</td>
+                    <td>Type de profil</td>
+                    <td>Actions</td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <!-- <div class="model active" id="model"> -->
+        <div class="model" id="model">
+            <div class="model-content">
+                <header class="model-header">
+                    <h2>Créer nouveau membre</h2>
+                    <span class="model-close" id="modelClose">&#10006;</span>
+                </header>
+                <form id="form" class="model-form">
+                    <input type="text" class="model-field" id="name" data-index="new" placeholder="Nom complet" required>
+                    <input type="email" class="model-field" id="email" placeholder="Mail" required>
+                    <input type="text" class="model-field" id="domaine" placeholder="Domaine" required>
+                    <input type="text" class="model-field" id="adresse" placeholder="Adresse" required>
+                    <input type="text" class="model-field" id="genre" placeholder="Genre" required>
+                    <input type="text" class="model-field" id="typeProfil" placeholder="Type de profil" required>
+                </form>
+                <footer class="model-footer">
+                    <button class="button green" id="save">Enregistrer</button>
+                    <button class="button blue" id="cancel">Annuler</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; Street Talent 2022 <br> Street Talent<br> Promoteur de talents<br> Phone: +23566000000<br> streettalent@gmail.com
+        <br>
+    </footer>
+</body>
+
+</html>

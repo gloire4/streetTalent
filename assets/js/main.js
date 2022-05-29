@@ -119,7 +119,7 @@
 					editMembre(index)
 				}else{
 					const membre = readMembre()[index]
-					const response = confirm(`Are you sure to delete the membre ${membre.name}`)
+					const response = confirm(`Etes-vous sûr de vouloir supprimer le membre ${membre.name}`)
 					if(response){
 						deleteMembre(index)
 						listMembre()
